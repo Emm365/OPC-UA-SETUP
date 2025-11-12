@@ -212,7 +212,7 @@ frame_botones.grid(row=0, column=2, sticky="nsew", padx=10, pady=10)
 
 try:
     logo_img = Image.open("logo.png")
-    logo_img = logo_img.resize((180, 80))
+    logo_img = logo_img.resize((130, 95))
     logo_tk = ImageTk.PhotoImage(logo_img)
     tk.Label(frame_botones, image=logo_tk, bg="#f5f5f5").pack(pady=10)
 except:
@@ -229,9 +229,7 @@ tk.Button(frame_botones, text="⏹️ Detener Sistema",
           command=detener_sistema,
           bg="#E53935", fg="white", font=("Arial", 11, "bold"), width=20).pack(pady=5)
 
-tk.Button(frame_botones, text="📊 Ver Lecturas",
-          command=mostrar_lecturas,
-          bg="#1976D2", fg="white", font=("Arial", 11, "bold"), width=20).pack(pady=5)
+
 
 # Guardar todos los campos editables para bloquearlos
 campos_editables = [
